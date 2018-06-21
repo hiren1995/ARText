@@ -20,14 +20,22 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Set the view's delegate
         sceneView.delegate = self
         
-        // Show statistics such as fps and timing information
-        sceneView.showsStatistics = true
+        let text = SCNText(string: "First AR App by Hiren Kadam", extrusionDepth: 1)
         
-        // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        let material = SCNMaterial()
+        material.diffuse.contents = UIColor.red
+        text.materials = [material]
         
-        // Set the scene to the view
-        sceneView.scene = scene
+        let node = SCNNode()
+        
+        node.position = SCNVector3Make(0, 0.02, -0.1)
+        node.scale = SCNVector3Make(0.01, 0.01, 0.01)
+        node.geometry = text
+        
+        
+        sceneView.scene.rootNode.addChildNode(node)
+        sceneView.autoenablesDefaultLighting = true
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
