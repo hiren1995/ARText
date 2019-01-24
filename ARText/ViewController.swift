@@ -18,7 +18,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     // all bug fixes done and commited in branch V 1.0
     
-    // New Features and Bugs resolved to V 1.1
+    // New Features and Bugs resolved to V 1.1 are commited and pushed
     
     @IBOutlet var sceneView: ARSCNView!
     
