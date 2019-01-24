@@ -14,6 +14,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     // make changes and commit to master
     
+    // add another branch from cmd+2 -> Branches -> right click master -> make branch V 1.0
+    
+    // all bug fixes done and commited in branch V 1.0
+    
     @IBOutlet var sceneView: ARSCNView!
     
     override func viewDidLoad() {
