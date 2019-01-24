@@ -12,7 +12,9 @@ import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
 
-    // v 1.0 demo branching
+    // make changes and commit to master
+    
+    
     
     @IBOutlet var sceneView: ARSCNView!
     
