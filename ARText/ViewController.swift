@@ -20,7 +20,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     // New Features and Bugs resolved to V 1.1 are done
     
-    // YOYO
     
     @IBOutlet var sceneView: ARSCNView!
     
